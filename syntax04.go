@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time" // seed	생성 패키지
+	"time" // seed  생성 패키지
 )
 
-// 난수 추출된 수의 소수 판정 프로그램 v0.3
+// 난수 추출된 수의 소수 판정 프로그램 v0.4
 // 소수 : 1과 자기 자신 이외에는 나누어 떨어지지 않는 수 (0과 1은 제외)
 func main() {
 	// seed 생성
@@ -23,7 +23,7 @@ func main() {
 		}
 	}
 
-	if isPrime == true {
+	if isPrime { // 비교 연산 제거
 		fmt.Println(number, "은(는) 소수입니다.")
 	} else {
 		fmt.Println(number, "은(는) 소수가 아닙니다.")
